@@ -16,13 +16,13 @@ let studentArray = [];
 studentArray.push(student_1, student_2, student_3, student_4, student_5, student_6, student_7, student_8, student_9, student_10);
 
 console.log(studentArray);
-let facultyNames = studentArray.map(function(name){
+let facultyNames = studentArray.map(function (name) {
     return name.facultyName;
 })
 console.log(facultyNames);
 
-let yearsOfStudyingSum = studentArray.reduce(function(yearsSum, currentObj){
-return yearsSum + currentObj.yearOfStuding;
-}, 0) 
+let yearsOfStudyingSum = studentArray.reduce(function (yearsSum, currentObj) {
+    return yearsSum + currentObj.yearOfStuding;
+}, 0)
 
-console.log("Years of studying sum number: "+yearsOfStudyingSum);
+console.log("Years of studying sum number: " + yearsOfStudyingSum);
